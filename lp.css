@@ -1,0 +1,310 @@
+:root{
+    --primary: #b6895b;
+    --bg: #010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins' , sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1,0.8);
+    border-bottom: 1px solid #694e32;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color:  var(--primary);
+
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+} 
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover{
+    color: var(--primary);
+}
+
+/* hero section */
+
+.hiro{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hiro::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(1,1,1,1) 8%, rgba(1,1,1,0.3) 50%);
+}
+
+.hiro .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hiro .content h1{
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hiro .content h1 span{
+    color: var(--primary);
+}
+
+.hiro .content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.hiro .content .cta{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.hiro .content .cta:hover{
+    background-color: #8f6844;
+}
+
+/* about section */
+
+.about{
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span{
+    color: var(--primary);
+}
+
+.about .row{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about .row .about-img{
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.about .row .content{
+    flex: 1 1 35rem;
+}
+
+.about .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p{
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* menu section */
+
+.menu{
+    padding: 8rem 7% 1.4rem;
+    text-align: center;
+}
+
+.menu h2{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.menu h2 span{
+    color: var(--primary);
+}
+
+.menu .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.menu-card{
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-10px);
+}
+
+.menu-card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.menu-card-title{
+    margin: 1rem 0 0.5rem;
+}
+
+.menu-card-price{
+    color: var(--primary);
+}
+
+/* contact section */
+
+.contact{
+    padding: 8rem 7% 1.4rem;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact h2 span{
+    color: var(--primary);
+}
+
+.contact .row{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact form{
+    flex: 1 1 45rem;
+}
+
+.contact .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background: #111;
+    border: 1px solid #333;
+    padding-left: 1rem;
+}
+
+.contact .input-group input{
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    color: #fff;
+}
+
+.contact .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    background: #111;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+
+    .navbar .navbar-nav{
+        display: none;
+    }
+
+    .about .row,
+    .contact .row{
+        flex-wrap: wrap;
+    }
+
+    .hiro .content h1{
+        font-size: 2.2rem;
+    }
+}
