@@ -185,7 +185,7 @@ body{
 
 /* menu section */
 
-.menu{
+.mennu{
     padding: 8rem 7% 1.4rem;
     text-align: center;
 }
@@ -313,7 +313,7 @@ footer{
 /* HAMBURGER */
 
 /* Default (Desktop & Laptop) → sembunyikan hamburger */
-#menu {
+#mennu {
     display: none;
 }
 
@@ -321,7 +321,7 @@ footer{
 @media (max-width: 768px) {
     
     /* Tampilkan hamburger */
-    #menu {
+    #mennu {
         display: inline-block;
     }
 
@@ -330,3 +330,4 @@ footer{
         display: none;
     }
 }
+
