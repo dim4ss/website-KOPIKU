@@ -308,3 +308,25 @@ footer{
         font-size: 2.2rem;
     }
 }
+
+
+/* HAMBURGER */
+
+/* Default (Desktop & Laptop) → sembunyikan hamburger */
+#menu {
+    display: none;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+    
+    /* Tampilkan hamburger */
+    #menu {
+        display: inline-block;
+    }
+
+    /* Sembunyikan menu utama */
+    .navbar .navbar-nav {
+        display: none;
+    }
+}
