@@ -190,16 +190,16 @@ body{
     text-align: center;
 }
 
-.menu h2{
+.mennu h2{
     font-size: 2.6rem;
     margin-bottom: 1rem;
 }
 
-.menu h2 span{
+.mennu h2 span{
     color: var(--primary);
 }
 
-.menu .row{
+.mennu .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -207,7 +207,7 @@ body{
     margin-top: 3rem;
 }
 
-.menu-card{
+.mennu-card{
     background: #111;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -215,20 +215,20 @@ body{
     transition: 0.3s;
 }
 
-.menu-card:hover{
+.mennu-card:hover{
     transform: translateY(-10px);
 }
 
-.menu-card img{
+.mennu-card img{
     width: 100%;
     border-radius: 0.5rem;
 }
 
-.menu-card-title{
+.mennu-card-title{
     margin: 1rem 0 0.5rem;
 }
 
-.menu-card-price{
+.mennu-card-price{
     color: var(--primary);
 }
 
@@ -330,4 +330,5 @@ footer{
         display: none;
     }
 }
+
 
