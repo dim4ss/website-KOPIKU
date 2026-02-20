@@ -185,21 +185,21 @@ body{
 
 /* menu section */
 
-.mennu{
+.menu{
     padding: 8rem 7% 1.4rem;
     text-align: center;
 }
 
-.mennu h2{
+.menu h2{
     font-size: 2.6rem;
     margin-bottom: 1rem;
 }
 
-.mennu h2 span{
+.menu h2 span{
     color: var(--primary);
 }
 
-.mennu .row{
+.menu .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -207,7 +207,7 @@ body{
     margin-top: 3rem;
 }
 
-.mennu-card{
+.menu-card{
     background: #111;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -215,20 +215,20 @@ body{
     transition: 0.3s;
 }
 
-.mennu-card:hover{
+.menu-card:hover{
     transform: translateY(-10px);
 }
 
-.mennu-card img{
+.menu-card img{
     width: 100%;
     border-radius: 0.5rem;
 }
 
-.mennu-card-title{
+.menu-card-title{
     margin: 1rem 0 0.5rem;
 }
 
-.mennu-card-price{
+.menu-card-price{
     color: var(--primary);
 }
 
@@ -330,5 +330,6 @@ footer{
         display: none;
     }
 }
+
 
 
