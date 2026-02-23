@@ -282,6 +282,7 @@ body{
     cursor: pointer;
 }
 
+
 /* footer */
 
 footer{
@@ -313,7 +314,7 @@ footer{
 /* HAMBURGER */
 
 /* Default (Desktop & Laptop) → sembunyikan hamburger */
-#mennu {
+#menu {
     display: none;
 }
 
@@ -321,7 +322,7 @@ footer{
 @media (max-width: 768px) {
     
     /* Tampilkan hamburger */
-    #mennu {
+    #menu {
         display: inline-block;
     }
 
@@ -333,3 +334,32 @@ footer{
 
 
 
+/* ========================= */
+/* MOBILE NAVBAR ACTIVE     */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #111;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav a{
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    /* Saat aktif */
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+}
