@@ -292,6 +292,17 @@ footer{
     margin-top: 3rem;
 }
 
+
+.navbar .navbar-nav a ::after{
+    transform-origin: 0 0;
+
+}
+
+.navbar .navbar-nav a :hover:after{
+    transform: scaleX(0.2);
+
+}
+
 /* responsive */
 
 @media (max-width: 768px){

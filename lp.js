@@ -13,3 +13,12 @@ document.addEventListener('click', function(e){
         navbarNav.classList.remove('active');
     }
 });
+
+// Tutup menu saat salah satu link diklik
+const navLinks = document.querySelectorAll('.navbar-nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarNav.classList.remove('active');
+    });
+});
